@@ -1,6 +1,6 @@
 import './style.css'
-import topHeader from './JS/Components/topHeader.js'
-import bottomHeader from './JS/Components/bottomHeader.js';
+import topHeader from './src/JS/Components/topHeader.js'
+import bottomHeader from './src/JS/Components/bottomHeader.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
