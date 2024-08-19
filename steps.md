@@ -54,10 +54,32 @@ Step No 05:-
         └── vite.config.js          # Vite configuration file (if needed)
 Step No 06:-
     Add external links needed like font awsome and googlefonts also add logo after including images
-Step No 06:-
+Step No 07:-
     Creating Main section 
         Open index.html and add main tag
         Make a file named mainSection.js
             In mainSection.js add code for mainSection
         Create CSS  files mainSection 
+        import all css files in appropiate js file and all js files in main.js
+Step No 08:-
+    Creating extraProduct Section
+    Open index.html and add div tag 
+        Make a file named extraProductSection.js
+            In extraProductSection.js add code for extraProductSection
+        Create CSS  files extraProductSection 
+        import all css files in appropiate js file and all js files in main.js
+        import all css files in appropiate js file and all js files in main.js
+Step No 09:-
+    Creating added policy section
+    Open index.html and add div tag 
+        Make a file named policySection.js
+            In policySection.js add code for policySection
+        Create CSS  files policySection 
+        import all css files in appropiate js file and all js files in main.js
+Step No 10:-
+    Creating added whyChooseSection
+    Open index.html and add div tag 
+        Make a file named whyChooseSection.js
+            In whyChooseSection.js add code for whyChooseSection
+        Create CSS  files whyChooseSection 
         import all css files in appropiate js file and all js files in main.js
