@@ -8,3 +8,4 @@ Step No 02:-
     Cleaning default code
         Open main.js and style.css
             remove everything
+        delete counter.js and javascript.svg
