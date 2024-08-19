@@ -43,3 +43,26 @@
         width: 100%;
     }
 }
+
+.section-navbar .navbar ul li .add-to-cart-button{
+    font-weight: 500;
+    font: inherit;
+    border-radius: 6px;
+    border: 0;
+    padding: 1rem 2.8rem;
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+    font-size: 1.6rem;
+
+    &:hover {
+        box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.16),
+            inset 0px 0px 0px 3px rgb(51, 51, 51);
+        background-color: var(--backgroundColor);
+        color: var(--buttonColor);
+        cursor: pointer;
+    }
+
+    .fa-cart-shopping {
+        padding-right: 1rem;
+    }
+}
