@@ -1,0 +1,32 @@
+.section-policy {
+    & .container {
+        padding: 3.2rem 0;
+        background-color: #fefefe;
+        border-radius: 0.5rem;
+    }
+}
+
+.div-policy {
+    padding: 3.2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+    border-right: 0.1rem solid var(--backgroundColor);
+
+    &:last-child {
+        border-right: none;
+    }
+
+    & .icons {
+        font-size: 3.2rem;
+        color: #576ef0;
+    }
+
+    p {
+        text-transform: capitalize;
+    }
+
+    & p:last-child {
+        font-size: 1.4rem;
+    }
+}
