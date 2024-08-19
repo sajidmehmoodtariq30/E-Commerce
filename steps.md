@@ -70,16 +70,23 @@ Step No 08:-
         import all css files in appropiate js file and all js files in main.js
         import all css files in appropiate js file and all js files in main.js
 Step No 09:-
-    Creating added policy section
+    Creating policy section
     Open index.html and add div tag 
         Make a file named policySection.js
             In policySection.js add code for policySection
         Create CSS  files policySection 
         import all css files in appropiate js file and all js files in main.js
 Step No 10:-
-    Creating added whyChooseSection
+    Creating whyChooseSection
     Open index.html and add div tag 
         Make a file named whyChooseSection.js
             In whyChooseSection.js add code for whyChooseSection
         Create CSS  files whyChooseSection 
+        import all css files in appropiate js file and all js files in main.js
+Step No 11:-
+    Creating footer section
+    Open index.html and add div tag 
+        Make a file named footerSection.js
+            In footerSection.js add code for footer
+        Create CSS  files footer 
         import all css files in appropiate js file and all js files in main.js

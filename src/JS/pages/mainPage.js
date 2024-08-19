@@ -6,6 +6,7 @@ import mainSection from '../Components/heroSection.js';
 import extraProductSection from '../Components/extraProductSection.js';
 import policySection from '../Components/policySection.js'
 import whyChooseSection from '../Components/whyChoseSection.js'
+import footerSection from '../Components/footerSection.js'
 
 const renderMainPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -38,6 +39,12 @@ const renderMainPage = () => {
         whyChoose.innerHTML = whyChooseSection;
     } else {
         console.error("why choose element element not found");
+    }
+    const footer = document.querySelector('footer');
+    if (footer) {
+        footer.innerHTML = footerSection;
+    } else {
+        console.error("footer element element not found");
     }
 };
 
