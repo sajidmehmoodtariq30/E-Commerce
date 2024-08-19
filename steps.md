@@ -54,3 +54,10 @@ Step No 05:-
         └── vite.config.js          # Vite configuration file (if needed)
 Step No 06:-
     Add external links needed like font awsome and googlefonts also add logo after including images
+Step No 06:-
+    Creating Main section 
+        Open index.html and add main tag
+        Make a file named mainSection.js
+            In mainSection.js add code for mainSection
+        Create CSS  files mainSection 
+        import all css files in appropiate js file and all js files in main.js
