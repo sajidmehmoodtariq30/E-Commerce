@@ -14,3 +14,10 @@ Step No 03:-
         Open index.html and style.css
             And add boilerplate code 
     Import style.css into main.js and main.js into html
+Step No 04:-
+    Creating header 
+        Open index.html and add header tag
+        Make a file named topHeader.js and bottomHeader.js
+            In topHeader.js add code for top header and in bottomHeader.js add code for bottom header
+        Create CSS  files for each header and add css in that file
+        import all css files in appropiate js file and all js files in main.js

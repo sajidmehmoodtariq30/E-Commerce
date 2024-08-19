@@ -1,0 +1,13 @@
+.top_txt {
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+
+    & .head_txt p {
+        font-size: 1.5rem;
+    }
+
+    & .sign_in_up {
+        display: flex;
+        gap: 3.2rem;
+    }
+}
