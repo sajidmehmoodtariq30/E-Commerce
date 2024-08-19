@@ -1,4 +1,4 @@
-import './style.css'
+import './src/Styles/style.css'
 import topHeader from './src/JS/Components/topHeader.js'
 import bottomHeader from './src/JS/Components/bottomHeader.js';
 

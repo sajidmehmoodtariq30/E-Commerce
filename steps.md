@@ -21,3 +21,36 @@ Step No 04:-
             In topHeader.js add code for top header and in bottomHeader.js add code for bottom header
         Create CSS  files for each header and add css in that file
         import all css files in appropiate js file and all js files in main.js
+Step No 05:- 
+    Make sure that the folder structure is correct
+        shopnest/
+        │
+        ├── public/                 # Publicly accessible assets
+        │   ├── images/
+        │   ├── fonts/
+        │   └── icons/
+        │
+        ├── data/                   # JSON files and any other static data
+        │   └── products.js
+        │
+        ├── src/                    # Source code directory for development
+        │   ├── JS/                 # JavaScript files
+        │   │   ├── Components/     # Reusable components (like your headers)
+        │   │   │   ├── topHeader.js
+        │   │   │   └── bottomHeader.js
+        │   │   ├── utils/          # Utility functions (e.g., fetching data)
+        │   │   └── main.js         # Main JavaScript entry point
+        │   └── styles/             # CSS and style-related files
+        │       ├── components/     # Component-specific styles (optional)
+        │       └── style.css       # Global styles
+        │
+        ├── index.html              # Main HTML file
+        │
+        ├── about.html              # Other HTML pages (e.g., About, Products, Contact)
+        ├── products.html
+        ├── contact.html
+        ├── addToCart.html
+        │
+        └── vite.config.js          # Vite configuration file (if needed)
+Step No 06:-
+    Add external links needed like font awsome and googlefonts also add logo after including images
