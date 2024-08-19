@@ -1,11 +1,12 @@
 import '../../Styles/components/bottom-header.css'
+import logo from '../../../public/images/amazon-logo.png'
 const bottomHeader = `
   <div class="container">
     <div class="navbar-brand">
       <a href="index.html">
         <img
-          src="/assets/log-B6Pkeca7.png"
-          alt="thapa eCommerce logo"
+          src="${logo}"
+          alt="shopNest"
           class="logo"
           width="80%"
           height="auto"
