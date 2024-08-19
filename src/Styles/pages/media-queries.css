@@ -195,14 +195,14 @@
         & .grid {
             gap: 1.4rem;
         }
-
-        & .text-align--right .why-choose--div {
-            align-items: flex-start;
-        }
-
-        & .choose-left-div {
-            text-align: left;
-        }
+    }
+    .section-why--choose .text-align--right .why-choose--div,
+    .choose-right-div .why-choose--div{
+        align-items: center !important;
+        text-align: center !important;
+    }
+    .choose-right-div .why-choose--div .common-text--highlight{
+        margin: auto;
     }
 
     .section-contact--homepage .btn {
