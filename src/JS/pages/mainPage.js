@@ -1,7 +1,9 @@
 import '../../Styles/pages/main-page.css'
+
 import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
 import mainSection from '../Components/heroSection.js';
+import extraProductSection from '../Components/extraProductSection.js';
 
 const renderMainPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -16,6 +18,12 @@ const renderMainPage = () => {
         main[0].insertAdjacentHTML('afterbegin', mainSection);
     } else {
         console.error("Main element not found");
+    }
+    const extraProduct = document.getElementById('section-extra-product');
+    if (extraProduct) {
+        extraProduct.innerHTML = extraProductSection;
+    } else {
+        console.error("Extra Product element element not found");
     }
 };
 

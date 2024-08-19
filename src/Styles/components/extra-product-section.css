@@ -1,0 +1,75 @@
+.div-extra {
+    padding: 1.3rem 1rem;
+    background-color: var(--backgroundSecondary);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        border-radius: 100% 0% 0% 100% / 100% 0% 100% 0%;
+        background-color: var(--borderColor);
+        z-index: 1;
+    }
+
+    & p {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: #1f36b9;
+    }
+
+    & h3 {
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin: 1.6rem 0 1.6rem 0;
+    }
+
+    & a {
+        text-transform: uppercase;
+        color: var(--buttonColor);
+        border-bottom: 0.1rem solid var(--secondaryColor);
+        font-size: 1.2rem;
+    }
+
+    & .extra-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        & img {
+            width: 12rem;
+            height: 16rem;
+            aspect-ratio: 4/3;
+            filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
+            -webkit-filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
+            mix-blend-mode: color-burn;
+        }
+    }
+
+    & img {
+        max-width: 100%;
+        width: 30%;
+        height: auto;
+    }
+}
+
+.grid-three-cols {
+    gap: 6.4rem;
+
+    & :div {
+        justify-self: left;
+    }
+}
+
+.div-extra {
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
