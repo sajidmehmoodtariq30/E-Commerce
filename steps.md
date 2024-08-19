@@ -9,3 +9,8 @@ Step No 02:-
         Open main.js and style.css
             remove everything
         delete counter.js and javascript.svg
+Step No 03:-
+    Adding Boilerplate code
+        Open index.html and style.css
+            And add boilerplate code 
+    Import style.css into main.js and main.js into html

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --backgroundColor: #f7f7f7;
+    --textColor: #1e1f23;
+    --main-color: #535bf2;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--textColor);
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 32px;
+    min-width: 320px;
+    background-color: var(--backgroundColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+    color: var(--textColor);
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p,
+li,
+a,
+label {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--para-color);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #646cff;
+    text-decoration: none;
+
+    &:hover {
+        color: #535bf2;
+    }
+}
+
+::placeholder {
+    font-family: "Urbanist", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/*! layout */
+.container {
+    max-width: 142rem;
+    margin: 0 auto;
+    padding: 9.6rem 2.4rem;
+}
+
+:is(.section-extra-product,
+    .section-blog,
+    .section-policy,
+    .section-contact--homepage,
+    .section-why--choose,
+    .section-contact,
+    footer) .container:first-child {
+    padding: 6.4rem 0 2.4rem 0;
+}
+
+
+/*! module / reusable  */
+
+.btn {
+    display: inline-block;
+    padding: 1.2rem 3.2rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    text-transform: capitalize;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    -moz-border-radius: 0.6rem;
+    -ms-border-radius: 0.6rem;
+    -o-border-radius: 0.6rem;
+}
+
+.section-common--title {
+    font-size: 2rem;
+    margin: 2.4rem 0 1.2rem 0;
+}
+
+/* states  */
+
+.btn:hover {
+    background-color: var(--bnt-hover-bg-color);
+    box-shadow: var(--btn-box-shadow);
+    cursor: pointer;
+}
+
+.btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--para-color);
+}
