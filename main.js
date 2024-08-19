@@ -1,14 +1,7 @@
-import './src/Styles/style.css'
-import './src/Styles/pages/media-queries.css'
-import topHeader from './src/JS/Components/topHeader.js'
-import bottomHeader from './src/JS/Components/bottomHeader.js';
-import mainSection from './src/JS/Components/heroSection.js'
-
+import './src/Styles/style.css';
+import './src/Styles/pages/media-queries.css';
+import renderMainPage from './src/JS/pages/mainPage.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const navbar = document.querySelector('.section-navbar');
-    navbar.insertAdjacentHTML('afterbegin',topHeader);
-    navbar.insertAdjacentHTML('beforeend',bottomHeader);
-    let main = document.getElementsByTagName('main')
-    main[0].insertAdjacentHTML('afterbegin',mainSection);
-})
+    renderMainPage(); // Call the function to render the main page
+});
