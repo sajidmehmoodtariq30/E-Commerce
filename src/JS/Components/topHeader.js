@@ -7,7 +7,7 @@ const topHeader =
       <div class="head_txt">
         <p>Free shipping, 30-day return or refund guarantee.</p>
       </div>
-      <div class="sing_in_up">
+      <div class="sign_in_up">
         <a href="# ">SIGN IN</a>
         <a href="# ">SIGN UP</a>
       </div>

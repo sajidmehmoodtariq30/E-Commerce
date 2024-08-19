@@ -1,0 +1,63 @@
+.custom-shape-divider-bottom-1696038172 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1696038172 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 12rem;
+}
+
+.custom-shape-divider-bottom-1696038172 .shape-fill {
+    fill: #ffffff;
+}
+
+main .section-hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-hero .grid {
+    align-items: center;
+    gap: 3rem;
+}
+
+.section-hero {
+    & .hero-subheading {
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        font-size: 2rem;
+        word-spacing: 0.2rem;
+        color: #003b99;
+        font-weight: 700;
+    }
+
+    & .hero-heading {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        initial-letter: -0.2rem;
+        text-transform: capitalize;
+        color: #003b99;
+        font-family: "Jost";
+    }
+
+    & .hero-para {
+        margin: 1rem 0 2.4rem 0;
+        color: white;
+    }
+}
+
+.section-hero img {
+    width: 100%;
+    height: auto;
+    transform: scaleX(-1);
+}

@@ -44,7 +44,9 @@
     }
 }
 
-.section-navbar .navbar ul li .add-to-cart-button{
+.section-navbar .navbar ul li .add-to-cart-button,
+.contact-btn,
+.hero-btn a{
     font-weight: 500;
     font: inherit;
     border-radius: 6px;
