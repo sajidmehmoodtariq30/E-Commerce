@@ -2,7 +2,7 @@ import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
 import productHeaderSection from '../Components/productHeaderSection.js';
 import renderAllProducts from '../utility/renderProduct.js';
-import productTemplate from '../Components/productTemplate.js';
+import footerSection from '../Components/footerSection.js'
 
 const renderAllProductsPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -20,7 +20,13 @@ const renderAllProductsPage = () => {
     } else {
         console.error("Product Header element not found");
     }
-    renderAllProducts()
+    renderAllProducts();
+    const footer = document.querySelector('.section-footer');
+    if(footer){
+        footer.insertAdjacentHTML('afterbegin', footerSection);
+    } else {
+        console.error("footer element not found");
+    }
 };
 
 export default renderAllProductsPage;
