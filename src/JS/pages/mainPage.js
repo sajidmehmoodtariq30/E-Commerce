@@ -1,7 +1,7 @@
 import '../../Styles/components/loader.css';
 import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
-import loader from '../Components/loader.js'; // Import the loader
+import loader from '../Components/loader.js';
 
 const renderMainPage = () => {
     const navbar = document.getElementById('section-navbar');
