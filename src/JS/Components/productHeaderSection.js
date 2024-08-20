@@ -8,8 +8,5 @@ const productHeaderSection = `
         empowers you to achieve your goals.
     </p>
 </div>
-<div class="container">
-    <div id="productContainer"></div>
-</div>
 `
 export default productHeaderSection;
