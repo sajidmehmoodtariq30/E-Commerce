@@ -6,11 +6,15 @@ import renderAllProductsPage from './src/JS/pages/allProducts.js';
 document.addEventListener('DOMContentLoaded', () => {
     const path = window.location.pathname;
 
+    // Define path groups for actions
+    const mainPagePaths = ['/index.html', '/'];
+    const allProductsPagePath = '/all-products.html';
+
     switch (path) {
-        case '/index.html':
+        case (mainPagePaths.includes(path) ? path : null):
             renderMainPage();
             break;
-        case '/allProducts.html':
+        case allProductsPagePath:
             renderAllProductsPage();
             break;
         // Add additional cases as needed
@@ -19,3 +23,4 @@ document.addEventListener('DOMContentLoaded', () => {
             break;
     }
 });
+con
