@@ -1,7 +1,9 @@
 import '../../Styles/pages/main-page.css';
+import '../../Styles/components/loader.css';
 
 import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
+import loader from '../Components/loader.js'; // Import the loader
 
 const renderMainPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -17,24 +19,31 @@ const renderMainPage = () => {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                if (entry.target.id === 'section-extra-product') {
+                const target = entry.target;
+
+                // Show loader
+                target.innerHTML = loader;
+
+                // Lazy load content based on section ID
+                if (target.id === 'section-extra-product') {
                     import('../Components/extraProductSection.js').then(module => {
-                        entry.target.innerHTML = module.default;
+                        target.innerHTML = module.default;
                     });
-                } else if (entry.target.id === 'section-policy') {
+                } else if (target.id === 'section-policy') {
                     import('../Components/policySection.js').then(module => {
-                        entry.target.innerHTML = module.default;
+                        target.innerHTML = module.default;
                     });
-                } else if (entry.target.id === 'section-why--choose') {
+                } else if (target.id === 'section-why--choose') {
                     import('../Components/whyChoseSection.js').then(module => {
-                        entry.target.innerHTML = module.default;
+                        target.innerHTML = module.default;
                     });
-                } else if (entry.target.tagName === 'FOOTER') {
+                } else if (target.tagName === 'FOOTER') {
                     import('../Components/footerSection.js').then(module => {
-                        entry.target.innerHTML = module.default;
+                        target.innerHTML = module.default;
                     });
                 }
-                observer.unobserve(entry.target); // Stop observing once loaded
+
+                observer.unobserve(target); // Stop observing once loaded
             }
         });
     });
@@ -51,10 +60,11 @@ const renderMainPage = () => {
     if (whyChoose) observer.observe(whyChoose);
     if (footer) observer.observe(footer);
 
-    // Immediately load the main section
+    // Immediately load the main section with loader
     if (main) {
+        main.innerHTML = loader;
         import('../Components/heroSection.js').then(module => {
-            main.insertAdjacentHTML('afterbegin', module.default);
+            main.innerHTML = module.default;
         });
     } else {
         console.error("Main element not found");
