@@ -1,8 +1,9 @@
 import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
 import productHeaderSection from '../Components/productHeaderSection.js';
-import renderAllProducts from '../utility/renderProduct.js';
+import renderProducts from '../utility/renderProduct.js';
 import footerSection from '../Components/footerSection.js'
+import allCategories from "../../../api/allCategories.json"
 
 const renderAllProductsPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -20,7 +21,7 @@ const renderAllProductsPage = () => {
     } else {
         console.error("Product Header element not found");
     }
-    renderAllProducts();
+    renderProducts(allCategories);
     const footer = document.querySelector('.section-footer');
     if(footer){
         footer.insertAdjacentHTML('afterbegin', footerSection);
