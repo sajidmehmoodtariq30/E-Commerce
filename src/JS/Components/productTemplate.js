@@ -1,30 +1,32 @@
 import '../../Styles/components/product-template.css';
 
-const productTemplate = `
+const productTemplate = (product) => {
+    let actualPrice = ((product.price*0.5)+product.price).toFixed(2)
+    return  `
 <div class="cards" id="cardValue">
     <article class="information [ card ]">
-        <span class="category"></span>
+        <span class="category">${product.category}</span>
         <div class="imageContainer">
-            <img class="productImage" src="" alt="" />
+            <img class="productImage" src="${product.image}" alt="${product.name}" />
         </div>
 
-        <h2 class="productName"></h2>
+        <h2 class="productName">${product.name}</h2>
         <div class="productRating">
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
         </div>
 
-        <p class="productDescription"></p>
+        <p class="productDescription">${product.description}</p>
 
         <div class="productPriceElement">
-            <p class="productPrice"></p>
-            <p class="productActualPrice"></p>
+            <p class="productPrice">$${product.price}</p>
+            <p class="productActualPrice">${actualPrice}</p>
         </div>
 
         <div class="productStockElement">
             <p class="productProperty">Total Stocks Available:</p>
-            <p class="productStock"></p>
+            <p class="productStock">${product.stock}</p>
         </div>
 
         <div class="productQuantityElement">
@@ -42,5 +44,5 @@ const productTemplate = `
     </article>
 </div>
 `;
-
+}
 export default productTemplate;
