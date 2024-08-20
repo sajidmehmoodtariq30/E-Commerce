@@ -44,7 +44,7 @@ const whyChoseSection = `
   </div>
   <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
     <figure>
-      <img src="${whychooseImage}" loading="lazy" alt="thapa technical home page " />
+      <img src="${whychooseImage}" loading="lazy"  alt="thapa technical home page " />
     </figure>
   </div>
   <div class="choose-right-div">

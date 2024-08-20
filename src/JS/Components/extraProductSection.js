@@ -12,7 +12,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="${bacpackImage}" alt="" />
+            <img src="${bacpackImage}" loading="lazy" alt="" />
           </div>
         </div>
 
@@ -23,7 +23,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="${umbrellaImage}" alt="" />
+            <img src="${umbrellaImage}" loading="lazy" alt="" />
           </div>
         </div>
         <div class="div-extra grid grid-two--cols">
@@ -33,7 +33,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="${bathroomRugImage}" alt="" />
+            <img src="${bathroomRugImage}" loading="lazy" alt="" />
           </div>
         </div>
       </div>
