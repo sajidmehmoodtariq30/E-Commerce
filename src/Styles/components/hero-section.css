@@ -19,6 +19,19 @@
     fill: #ffffff;
 }
 
+
+main {
+    height: 100vh;
+    position: relative;
+    background-color: #d9e9ff;
+    background-image: linear-gradient(to top right,
+            #3d86fa,
+            #4484fb,
+            #679eff,
+            #b3d2ff,
+            #ebf3fe);
+}
+
 main .section-hero {
     height: 90vh;
     display: flex;
