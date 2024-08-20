@@ -1,9 +1,6 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 2.5rem;
-    width: 36rem;
     padding: 1.6rem;
     margin: 1.8vh auto;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -17,8 +14,8 @@
 
 .category {
     background-color: #e7d6d6;
-    padding: 0.3rem 1.2rem;
-    font-size: 1.2rem;
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
     letter-spacing: 0.1rem;
     border-radius: 10rem;
     -webkit-border-radius: 10rem;
@@ -29,7 +26,7 @@
 
 .productImage {
     max-width: 100%;
-    width: 32rem;
+    width: 25rem;
     height: auto;
 }
 
@@ -37,7 +34,7 @@
 .productQuantityElement,
 .productStockElement {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
     text-align: center;
 }
@@ -48,7 +45,7 @@
 
 .productProperty,
 .productDescription {
-    font-size: 1.6rem;
+    font-size: 1rem;
 }
 
 .stockElement {
@@ -62,8 +59,8 @@
     & button {
         background-color: transparent;
         color: var(--buttonColor);
-        font-size: 2rem;
-        padding: 0.6rem 2rem;
+        font-size: 1.3rem;
+        padding: 0.6rem 1rem;
         font-weight: bold;
         border: none;
 
