@@ -43,6 +43,10 @@
     margin: 0.8rem 0;
 }
 
+.productActualPrice {
+    text-decoration: line-through;
+}
+
 .productProperty,
 .productDescription {
     font-size: 1rem;

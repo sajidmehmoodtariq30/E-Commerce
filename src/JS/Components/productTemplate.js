@@ -3,8 +3,8 @@ import '../../Styles/components/product-template.css';
 const productTemplate = (currproduct) => {
     let actualPrice = ((currproduct.price*0.5)+currproduct.price).toFixed(2)
     return  `
-<div class="cards" id="cardValue">
-    <article class="information [ card ]">
+<div class="cards" id="card${currproduct.id}">
+    <article class="information">
         <span class="category">${currproduct.category}</span>
         <div class="imageContainer">
             <img class="productImage" src="${currproduct.image}" alt="${currproduct.name}" />
@@ -46,3 +46,4 @@ const productTemplate = (currproduct) => {
 `;
 }
 export default productTemplate;
+
