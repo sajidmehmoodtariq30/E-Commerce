@@ -44,17 +44,24 @@
     }
 }
 
-.section-navbar .navbar ul li .add-to-cart-button,
+#cartValue {
+    background-color: var(--buttonColor);
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.add-to-cart-button,
 .contact-btn,
-.hero-btn a{
+.hero-btn a {
     font-weight: 500;
     font: inherit;
     border-radius: 6px;
     border: 0;
     padding: 1rem 2.8rem;
     background-color: var(--buttonColor);
-    color: var(--backgroundColor);
+    color: #fff;
     font-size: 1.6rem;
+    /* margin-top: 1.2rem; */
 
     &:hover {
         box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.16),
