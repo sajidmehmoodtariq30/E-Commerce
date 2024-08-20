@@ -1,12 +1,7 @@
-import '../../Styles/pages/main-page.css'
+import '../../Styles/pages/main-page.css';
 
 import topHeader from '../Components/topHeader.js';
 import bottomHeader from '../Components/bottomHeader.js';
-import mainSection from '../Components/heroSection.js';
-import extraProductSection from '../Components/extraProductSection.js';
-import policySection from '../Components/policySection.js'
-import whyChooseSection from '../Components/whyChoseSection.js'
-import footerSection from '../Components/footerSection.js'
 
 const renderMainPage = () => {
     const navbar = document.getElementById('section-navbar');
@@ -16,35 +11,53 @@ const renderMainPage = () => {
     } else {
         console.error("Navbar element not found");
     }
-    const main = document.getElementsByTagName('main');
-    if (main.length > 0) {
-        main[0].insertAdjacentHTML('afterbegin', mainSection);
+
+    // Intersection Observer for Lazy Loading Sections
+    const main = document.getElementsByTagName('main')[0];
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                if (entry.target.id === 'section-extra-product') {
+                    import('../Components/extraProductSection.js').then(module => {
+                        entry.target.innerHTML = module.default;
+                    });
+                } else if (entry.target.id === 'section-policy') {
+                    import('../Components/policySection.js').then(module => {
+                        entry.target.innerHTML = module.default;
+                    });
+                } else if (entry.target.id === 'section-why--choose') {
+                    import('../Components/whyChoseSection.js').then(module => {
+                        entry.target.innerHTML = module.default;
+                    });
+                } else if (entry.target.tagName === 'FOOTER') {
+                    import('../Components/footerSection.js').then(module => {
+                        entry.target.innerHTML = module.default;
+                    });
+                }
+                observer.unobserve(entry.target); // Stop observing once loaded
+            }
+        });
+    });
+
+    // Elements to be lazy loaded
+    const extraProduct = document.getElementById('section-extra-product');
+    const policy = document.getElementById('section-policy');
+    const whyChoose = document.getElementById('section-why--choose');
+    const footer = document.querySelector('footer');
+
+    // Observing elements for lazy loading
+    if (extraProduct) observer.observe(extraProduct);
+    if (policy) observer.observe(policy);
+    if (whyChoose) observer.observe(whyChoose);
+    if (footer) observer.observe(footer);
+
+    // Immediately load the main section
+    if (main) {
+        import('../Components/heroSection.js').then(module => {
+            main.insertAdjacentHTML('afterbegin', module.default);
+        });
     } else {
         console.error("Main element not found");
-    }
-    const extraProduct = document.getElementById('section-extra-product');
-    if (extraProduct) {
-        extraProduct.innerHTML = extraProductSection;
-    } else {
-        console.error("Extra Product element element not found");
-    }
-    const policy = document.getElementById('section-policy');
-    if (policy) {
-        policy.innerHTML = policySection;
-    } else {
-        console.error("policy element element not found");
-    }
-    const whyChoose = document.getElementById('section-why--choose');
-    if (whyChoose) {
-        whyChoose.innerHTML = whyChooseSection;
-    } else {
-        console.error("why choose element element not found");
-    }
-    const footer = document.querySelector('footer');
-    if (footer) {
-        footer.innerHTML = footerSection;
-    } else {
-        console.error("footer element element not found");
     }
 };
 
