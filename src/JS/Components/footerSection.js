@@ -1,9 +1,10 @@
 import '../../Styles/components/footer-section.css';
+import logo from '/images/amazon-logo.png'
 
 const footer =`
 <div class="footer-container container">
     <div class="content_1">
-        <img src="/assets/logo-uyUNOWdx.png" alt="logo" />
+        <img src="${logo}" alt="logo" />
         <p>
         Welcome to Thapa EcomStore, your ultimate destination for
         cutting-edge gadgets!
@@ -36,7 +37,7 @@ const footer =`
     </div>
     <div class="f-design">
     <div class="f-design-txt">
-        <p>Design and Code by Thapa Technical</p>
+        <p>Developed by Sajid M Tariq</p>
     </div>
 </div>
 `

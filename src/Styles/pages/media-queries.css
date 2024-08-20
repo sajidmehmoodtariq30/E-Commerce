@@ -185,6 +185,10 @@
     .section-navbar .container {
         flex-direction: column;
         gap: 3.2rem;
+
+        .navbar-brand a img {
+            width: 100px;
+        }
     }
 
     .section-why--choose {
@@ -196,12 +200,14 @@
             gap: 1.4rem;
         }
     }
+
     .section-why--choose .text-align--right .why-choose--div,
-    .choose-right-div .why-choose--div{
+    .choose-right-div .why-choose--div {
         align-items: center !important;
         text-align: center !important;
     }
-    .choose-right-div .why-choose--div .common-text--highlight{
+
+    .choose-right-div .why-choose--div .common-text--highlight {
         margin: auto;
     }
 

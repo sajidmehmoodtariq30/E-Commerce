@@ -1,5 +1,6 @@
 import '../../Styles/components/bottom-header.css'
-import logo from '../../../public/images/amazon-logo.png'
+import logo from '/images/amazon-logo.png'
+
 const bottomHeader = `
   <div class="container">
     <div class="navbar-brand">

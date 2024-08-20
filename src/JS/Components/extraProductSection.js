@@ -1,4 +1,7 @@
 import '../../Styles/components/extra-product-section.css'
+import bacpackImage from '/images/products/backpack.jpg'
+import umbrellaImage from '/images/products/umbrella.jpg'
+import bathroomRugImage from '/images/products/bathroom-rug.jpg'
 
 const extraProductSection = `
     <div class="container grid grid-three--cols">
@@ -9,7 +12,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="../../../public/images/products/backpack.jpg" alt="" />
+            <img src="${bacpackImage}" alt="" />
           </div>
         </div>
 
@@ -20,7 +23,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="../../../public/images/products/umbrella.jpg" alt="" />
+            <img src="${umbrellaImage}" alt="" />
           </div>
         </div>
         <div class="div-extra grid grid-two--cols">
@@ -30,7 +33,7 @@ const extraProductSection = `
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="../../../public/images/products/bathroom-rug.jpg" alt="" />
+            <img src="${bathroomRugImage}" alt="" />
           </div>
         </div>
       </div>

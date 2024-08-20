@@ -1,4 +1,5 @@
 import '../../Styles/components/why-choose-section.css'
+import whychooseImage from '/images/products/ecompost.png'
 
 const whyChoseSection = `
 <div class="container">
@@ -43,7 +44,7 @@ const whyChoseSection = `
   </div>
   <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
     <figure>
-      <img src="../../../public/images/products/ecompost.png" alt="thapa technical home page " />
+      <img src="${whychooseImage}" alt="thapa technical home page " />
     </figure>
   </div>
   <div class="choose-right-div">

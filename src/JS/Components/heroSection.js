@@ -1,4 +1,5 @@
 import '../../Styles/components/hero-section.css'
+import heroImage from '/images/heroSection.svg'
 
 const mainSection = `
     <section class="section-hero">
@@ -24,7 +25,7 @@ const mainSection = `
           >
             <figure>
               <img
-                src="../../../public/images/heroSection.svg"
+                src="${heroImage}"
                 alt="appliances"
               />
             </figure>
