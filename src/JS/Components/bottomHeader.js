@@ -23,7 +23,7 @@ const bottomHeader = `
           <a href="about.html" class="nav-link">about</a>
         </li>
         <li class="nav-item">
-          <a href="all-products.html" class="nav-link">products</a>
+          <a href="/all-products.html" class="nav-link">products</a>
         </li>
         <li class="nav-item">
           <a href="contact.html" class="nav-link">contact</a>
