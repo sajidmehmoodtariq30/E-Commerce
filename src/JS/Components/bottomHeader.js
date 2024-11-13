@@ -7,7 +7,7 @@ const bottomHeader = `
       <a href="index.html">
         <img
           src="${logo}"
-          alt="shopNest"
+          alt="Amazon"
           class="logo"
           width="80%"
           height="auto"
